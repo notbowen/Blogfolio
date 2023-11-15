@@ -15,6 +15,6 @@ display_author = false
 favicon = "pfp.jpeg"
 
 header_nav = [
-    { url = "/", name_en = "home" },
-    { url = "/projects", name_en = "projects" }
+    { url = "/", name_en = "/home" },
+    { url = "/projects", name_en = "/projects" }
 ]
