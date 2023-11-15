@@ -12,7 +12,6 @@ highlight_theme = "gruvbox-dark"
 [extra]
 default_theme = "dark"
 display_author = false
-favicon = "pfp.jpeg"
 
 header_nav = [
     { url = "/", name_en = "/home" },
