@@ -1,0 +1,20 @@
+base_url = "https://hubowen.dev"
+title = "Bowen's Portfolio + Blog"
+compile_sass = true
+build_search_index = true
+theme = "anemone"
+
+[markdown]
+highlight_code = true
+render_emoji = true
+highlight_theme = "gruvbox-dark"
+
+[extra]
+default_theme = "dark"
+display_author = false
+favicon = "pfp.jpeg"
+
+header_nav = [
+    { url = "/", name_en = "home" },
+    { url = "/projects", name_en = "projects" }
+]
