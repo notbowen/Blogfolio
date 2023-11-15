@@ -15,5 +15,6 @@ display_author = false
 
 header_nav = [
     { url = "/", name_en = "/home" },
-    { url = "/projects", name_en = "/projects" }
+    { url = "/projects", name_en = "/projects" },
+    { url = "/blog", name_en = "/blog" }
 ]
