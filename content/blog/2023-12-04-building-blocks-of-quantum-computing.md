@@ -1,5 +1,5 @@
 +++
-title = "Linear Algebra - And how it relates to Quantum Computing"
+title = "Linear Algebra - The Building Blocks of Quantum Computing"
 +++
 
 [NOTE] This is currently a work in progress article!
@@ -47,3 +47,35 @@ $$\begin{aligned}
 \end{aligned}$$
 
 Wow! We can thus conclude that the square root of the bra-ket product would give us the length of the vector.
+
+## Orthogonal Vectors
+
+Orthogonal vectors are perpendicular to each other.
+2 vectors are considered orthogonal to each other if $\left<A|B\right> = 0$.
+Why? Lets try to prove it by building off the previous section.
+
+If 2 vectors, a and b, are orthogonal, their resultant vector's magnitude, c, should satisfy the following equation:
+
+$$|a|^2 + |b|^2 = |c|^2$$
+
+{{ img(id="orthogonal_vectors.png", alt="Orthogonal vectors", class="textCenter") }}
+
+Hence, if 2 vectors are orthogonal to each other, $|\left|A\right>|^2 + |\left|B\right>|^2$ should be equal to $|\left|A\right> + \left|B\right>|^2$
+
+By rewriting $|\left|A\right> + \left|B\right>|^2$, we get:
+
+$$\begin{aligned}
+    |\left|A\right> + \left|B\right>|^2 &= \left<A+B|A+B\right> \\\\
+    &= \begin{bmatrix}
+        a_1 + b_1 & a_2 + b_2
+    \end{bmatrix}
+    \begin{bmatrix}
+        a_1 + b_1 \\\ a_2 + b_2
+    \end{bmatrix} \\\\
+    &= (a_1 + b_1)^2 + (a_2 + b_2)^2 \\\\
+    &= ({a_1}^2 + 2a_1b_1 + {b_1}^2) + ({a_2}^2 + 2a_2b_2 + {b_2}^2) \\\\
+    &= {a_1}^2 + {a_2}^2 + {b_1}^2 + {b_2}^2 + 2(a_1b_1 + a_2b_2) \\\\
+    &= |\left|A\right>|^2 + |\left|B\right>|^2 + 2\left<A|B\right>
+\end{aligned}$$
+
+The equation above shows that if $2\left<A|B\right> = \left<A|B\right> = 0$, $\left|A\right>$ and $\left|B\right>$ are orthogonal.
