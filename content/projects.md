@@ -4,6 +4,18 @@ title = "Projects"
 
 Here is a list of notable projects that I've done over the past few years.
 
+## Track It
+
+{{ img(id="trackit.png", alt="Track It Showcase", class="textCenter") }}
+
+A to-do tracker that allows for collaboration. Uses Next.JS and Supabase.
+Currently a work in progress, hopefully will be done by the end of this
+year 🙏
+
+[Github Link](https://github.com/notbowen/track-it)
+
+---
+
 ## Rust Blog 🖋️
 
 {{ img(id="rust_blog.png", alt="Rust Blog Showcase", class="textCenter") }}
