@@ -7,6 +7,7 @@
 
 Hi! I'm a Singaporean student currently pursuing a [Diploma in Cybersecurity & Digital Forensics](https://www.np.edu.sg/schools-courses/academic-schools/school-of-infocomm-technology/diploma-in-cybersecurity-digital-forensic) at Ngee Ann Polytechnic!
 This site serves as my portfolio and a place where I'll (hopefully) keep my blogs.
+My resume can be found over [here](/Hu_Bowen_Resume.pdf)!
 
 > *"Nothing is as permanent as a temporary solution that works."*
 

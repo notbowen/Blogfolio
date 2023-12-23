@@ -16,5 +16,6 @@ display_author = false
 header_nav = [
     { url = "/", name_en = "/home" },
     { url = "/projects", name_en = "/projects" },
-    { url = "/blog", name_en = "/blog" }
+    { url = "/blog", name_en = "/blog" },
+    { url = "/Hu_Bowen_Resume.pdf", name_en = "/resume" }
 ]
