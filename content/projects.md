@@ -4,15 +4,15 @@ title = "Projects"
 
 Here is a list of notable projects that I've done over the past few years.
 
-## Track It
+## BB84 Implementation 🔒
 
-{{ img(id="trackit.png", alt="Track It Showcase", class="textCenter") }}
+{{ img(id="bb84.png", alt="Track It Showcase", class="textCenter") }}
 
-A to-do tracker that allows for collaboration. Uses Next.JS and Supabase.
-Currently a work in progress, hopefully will be done by the end of this
-year 🙏
+A implementation of the BB84 [quantum key distribution](https://en.wikipedia.org/wiki/Quantum_key_distribution)
+protocol using Python, Numpy and Socket. Calculates the superpositions
+of qubits using Numpy vector manipulation functions and uses Socket for networking.
 
-[Github Link](https://github.com/notbowen/track-it)
+[Github Link](https://github.com/notbowen/bb84-numpy)
 
 ---
 
