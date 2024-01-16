@@ -1,6 +1,9 @@
-+++
-title = "Starting 2024 - New Year, New Achievements"
-+++
+---
+title: "Starting 2024 - New Year New Achievements"
+date: 2024-01-15T00:00:00+08:00
+type: "post"
+showTableOfContents: true
+---
 
 2023 was a year for many firsts. I attempted my first pwn challenge,
 I wrote my first CTF challenge (with [@Kairos-T](https://github.com/Kairos-T/)),
@@ -35,10 +38,9 @@ Attended the UofTCTF held by the University of Toronto. Only managed to finish t
 level challenges. The solutions were rather trivial, the hard part was locating the
 vulnerability to exploit (due to a lack of experience 💀).
 
+![UofTCTF rating](/images/new-year-new-achievements/uoftctf.png)
+
 Takeaways?
 
 - Contributed 1053 out of 1897 points to the team, achieved an overall 201st place 🗿
-
 - Mainly learnt new pwn concepts and finally attempted a rev challenge 🥳
-
-{{ img(id="uoftctf.png", alt="UofTCTF rating", class="textCenter") }}

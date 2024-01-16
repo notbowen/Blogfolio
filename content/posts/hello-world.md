@@ -1,9 +1,12 @@
-+++
-title = "Hello World - An Introduction to my Blog"
-+++
+---
+title: "Hello World - An Introduction to my Blog"
+date: 2023-11-05T00:00:00+08:00
+type: "post"
+showTableOfContents: true
+---
 
 Following the tradition of creating a "Hello World" program after a project is set up,
-here is the markdown equivalent of mine. I'll talk about the underlying technolgies
+here is the markdown equivalent of mine. I'll talk about the underlying technologies
 powering this blog, along with its deployment process that I've setup using Vercel.
 
 ## Underlying Technologies
@@ -21,7 +24,7 @@ to the fact that SurrealDB is still in it's alpha stage, meaning that breaking c
 are released every now and then. The build times were also insane, averaging about
 8-10 minutes per deployment.
 
-{{ img(id="build_times.png", alt="Insane build times", class="textCenter") }}
+![Insane build times](/images/hello-world/build_times.png)
 
 I settled on using a static site generator as it is rather easy to maintain and write
 new posts, since they force you to follow a certain folder structure while giving
@@ -37,11 +40,11 @@ Using Zola made things really easy to configure, it basically works out of the b
 needed to click "Import from Git Repository" and it got everything set up 😎. Deployments
 happen automatically when I push to the `main` branch.
 
-{{ img(id="vercel_prod.png", alt="Vercel production", class="textCenter") }}
+![Vercel production](/images/hello-world/vercel_prod.png)
 
 An added bonus is that they help you set up your custom domains too!
 
-{{ img(id="custom_domains.png", alt="Custom domains", class="textCenter") }}
+![Custom domains](/images/hello-world/custom_domains.png)
 
 ## Closing Thoughts
 
