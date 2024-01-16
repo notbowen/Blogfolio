@@ -1,6 +1,9 @@
-+++
-title = "Linear Algebra - The Building Blocks of Quantum Computing"
-+++
+---
+title: "Linear Algebra - The Building Blocks of Quantum Computing"
+date: 2023-12-04T00:00:00+08:00
+type: "post"
+showTableOfContents: true
+---
 
 [NOTE] This is currently a work in progress article!
 
@@ -58,7 +61,7 @@ If 2 vectors, a and b, are orthogonal, their resultant vector's magnitude, c, sh
 
 $$|a|^2 + |b|^2 = |c|^2$$
 
-{{ img(id="orthogonal_vectors.png", alt="Orthogonal vectors", class="textCenter") }}
+![Orthogonal vectors](/images/building-blocks-of-quantum-computing/orthogonal_vectors.png)
 
 Hence, if 2 vectors are orthogonal to each other, $|\left|A\right>|^2 + |\left|B\right>|^2$ should be equal to $|\left|A\right> + \left|B\right>|^2$
 
