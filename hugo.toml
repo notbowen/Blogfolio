@@ -42,8 +42,8 @@ enableRobotsTXT = true
   dateFormat = "02 January 2006"
 
   socialIcons = [
-    {name = "github", url = "https://example.com"},
-    {name = "linkedin", url = "https://example.com"},
+    {name = "github", url = "https://github.com/notbowen"},
+    {name = "linkedin", url = "https://linkedin.com/in/hubowen"},
     {name = "email", url = "mailto://contact@hubowen.dev"},
   ]
 
