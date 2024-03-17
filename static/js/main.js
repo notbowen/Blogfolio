@@ -1,14 +1,16 @@
 window.addEventListener("DOMContentLoaded",() => {
-	document.querySelectorAll("#timeline").forEach(el => new CollapsibleTimeline(el));
+	document.querySelectorAll("#timeline").forEach((el, idx) => new CollapsibleTimeline(el, `toggleAll${idx+1}`));
 });
 
 class CollapsibleTimeline {
-	constructor(el) {
+	constructor(el, buttonId) {
 		this.el = el;
+		this.buttonId = buttonId;
 		this.init();
 	}
 	init() {
-		this.el?.addEventListener("click",this.itemAction.bind(this));
+		const button = document.getElementById(this.buttonId);
+        button?.addEventListener("click", this.itemAction.bind(this));
 	}
 	animateItemAction(button,ctrld,contentHeight,shouldCollapse) {
 		const expandedClass = "timeline__item-body--expanded";
@@ -38,34 +40,38 @@ class CollapsibleTimeline {
 		}
 	}
 	itemAction(e) {
-		const { target } = e;
-		const action = target?.getAttribute("data-action");
-		const item = target?.getAttribute("data-item");
+		e.preventDefault();
 
-		if (action) {
-			const targetExpanded = action === "expand" ? "false" : "true";
-			const buttons = Array.from(this.el?.querySelectorAll(`[aria-expanded="${targetExpanded}"]`));
-			const wasExpanded = action === "collapse";
+        const { currentTarget: target } = e;
+        const action = target?.getAttribute("data-action");
+        const item = target?.getAttribute("data-item");
 
-			for (let button of buttons) {
-				const buttonID = button.getAttribute("data-item");
-				const ctrld = this.el?.querySelector(`#item${buttonID}-ctrld`);
-				const contentHeight = ctrld.firstElementChild?.offsetHeight;
+        if (action) {
+            const targetExpanded = action === "expand" ? "false" : "true";
+            const buttons = Array.from(this.el?.querySelectorAll(`[aria-expanded="${targetExpanded}"]`));
+            const wasExpanded = action === "collapse";
 
-				this.animateItemAction(button,ctrld,contentHeight,wasExpanded);
-			}
+			target?.setAttribute("data-action", action === "expand" ? "collapse" : "expand");
 
-		} else if (item) {
-			const button = this.el?.querySelector(`[data-item="${item}"]`);
-			const expanded = button?.getAttribute("aria-expanded");
+            for (let button of buttons) {
+                const buttonID = button.getAttribute("data-item");
+                const ctrld = this.el?.querySelector(`#item${buttonID}-ctrld`);
+                const contentHeight = ctrld.firstElementChild?.offsetHeight;
 
-			if (!expanded) return;
+                this.animateItemAction(button,ctrld,contentHeight,wasExpanded);
+            }
 
-			const wasExpanded = expanded === "true";
-			const ctrld = this.el?.querySelector(`#item${item}-ctrld`);
-			const contentHeight = ctrld.firstElementChild?.offsetHeight;
+        } else if (item) {
+            const button = this.el?.querySelector(`[data-item="${item}"]`);
+            const expanded = button?.getAttribute("aria-expanded");
 
-			this.animateItemAction(button,ctrld,contentHeight,wasExpanded);
-		}
-	}
+            if (!expanded) return;
+
+            const wasExpanded = expanded === "true";
+            const ctrld = this.el?.querySelector(`#item${item}-ctrld`);
+            const contentHeight = ctrld.firstElementChild?.offsetHeight;
+
+            this.animateItemAction(button,ctrld,contentHeight,wasExpanded);
+        }
+    }
 }
