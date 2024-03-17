@@ -40,6 +40,7 @@ enableRobotsTXT = true
     
 [params]
   dateFormat = "02 January 2006"
+  showPortfolio = true
 
   socialIcons = [
     {name = "github", url = "https://github.com/notbowen"},
@@ -78,4 +79,9 @@ enableRobotsTXT = true
         });
       });
     </script>
+  '''
+
+  # Custom Timeline
+  customFooterHTML = '''
+    <script src="js/main.js"></script>
   '''
