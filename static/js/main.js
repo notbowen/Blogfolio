@@ -48,8 +48,10 @@ class CollapsibleTimeline {
         }
     }
     itemAction(e) {
-        e.preventDefault();
-        e.stopPropagation();
+        if (e.target.tagName !== 'A') {
+            e.preventDefault();
+            e.stopPropagation();
+        }
 
 		let target = e.currentTarget;
 		if (target.tagName !== 'BUTTON') {
