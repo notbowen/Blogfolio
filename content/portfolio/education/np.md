@@ -13,4 +13,4 @@ weight: 99
 
 **Co-Curricular Activities:**
 
-- [NullSec](https://nullsecsig.com/#/) Intern Exco
+- [NullSec](https://nullsecsig.com/#/) Vice-President
