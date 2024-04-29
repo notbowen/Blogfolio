@@ -1,9 +1,7 @@
 +++
 title = 'Academic Year 2023, Semester 2 - A Reflection'
-date = 2024-02-08T21:52:19+08:00
+date = 2024-02-08
 draft = true
-type = 'post'
-showTableOfContents = true
 +++
 
 If you find this piece of text, you're a stalker bruh.

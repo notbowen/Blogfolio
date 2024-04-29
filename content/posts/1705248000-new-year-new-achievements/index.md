@@ -1,8 +1,6 @@
 ---
-title: "Starting 2024 - New Year New Achievements"
-date: 2024-01-15T00:00:00+08:00
-type: "post"
-showTableOfContents: true
+title: "Starting 2024: New Year New Achievements"
+date: 2024-01-15
 ---
 
 2023 was a year for many firsts. I attempted my first pwn challenge,

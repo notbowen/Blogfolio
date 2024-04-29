@@ -1,8 +1,6 @@
 ---
-title: "Hello World - An Introduction to my Blog"
-date: 2023-11-05T00:00:00+08:00
-type: "post"
-showTableOfContents: true
+title: "Hello World: An Introduction to my Blog"
+date: 2023-11-05
 ---
 
 Following the tradition of creating a "Hello World" program after a project is set up,

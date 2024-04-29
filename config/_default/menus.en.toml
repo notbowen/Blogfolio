@@ -1,0 +1,31 @@
+[[main]]
+none = "none"
+
+[[main]]
+name = "Resume"
+pre = "graduation-cap"
+pageRef = "resume"
+identifier = "FHAZLYSqTm"
+weight = 1
+
+[[main]]
+name = "Posts"
+pre = "list"
+pageRef = "posts"
+identifier = "czWT460zDg"
+weight = 2
+
+[[main]]
+pre = "github"
+url = "https://github.com/notbowen"
+identifier = "kxZ7LK5Rht"
+weight = 3
+
+[[main]]
+pre = "linkedin"
+url = "https://linkedin.com/in/hubowen"
+identifier = "OdAuZT6e8s"
+weight = 4
+
+[[footer]]
+none = "none"

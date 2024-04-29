@@ -1,9 +1,9 @@
 ---
-title: "Linear Algebra - The Building Blocks of Quantum Computing"
-date: 2023-12-04T00:00:00+08:00
-type: "post"
-showTableOfContents: true
+title: "The Building Blocks of Quantum Computing"
+date: 2023-12-04
 ---
+
+{{< katex >}}
 
 [NOTE] This is currently a work in progress article!
 
@@ -17,7 +17,7 @@ Now with that clarified, please allow me to try and string together a barely coh
 ## Bras and Kets
 
 Though the name sounds interesting and cryptic, Bras and Kets simply refer to n-dimensional vectors arranged horizontally and vertically respectively.
-A Bra denoted as `A` would be represented as $\left< A \right|$, and a Ket denoted as `B` would be represented as $\left|B\right>$.
+A Bra denoted as `A` would be represented as \\(\left< A \right|\\), and a Ket denoted as `B` would be represented as \\(\left|B\right>\\).
 
 2 dimensional Bra (horizontal):
 $$\left< A \right| = \begin{bmatrix}
@@ -32,7 +32,7 @@ $$\left| B \right> = \begin{bmatrix}
 ## Magnitude of Kets
 
 Secondary school math has taught us that the length of a vector can be calculated using Pythagoras' theorem.
-For example, given a vector `A` with values $\begin{bmatrix}a \\\ b\end{bmatrix}$, we can apply the Pythagoras' theorem and deduce it's magnitude using $\sqrt{a^2 + b^2}$.
+For example, given a vector `A` with values \\(\begin{bmatrix}a \\\ b\end{bmatrix}\\), we can apply the Pythagoras' theorem and deduce it's magnitude using \\(\sqrt{a^2 + b^2}\\).
 
 However, there is another way to calculate the magnitude of a vector using bras and kets!
 Observe what happens when we multiply the bra of `A` to the ket of `A`:
@@ -54,7 +54,7 @@ Wow! We can thus conclude that the square root of the bra-ket product would give
 ## Orthogonal Vectors
 
 Orthogonal vectors are perpendicular to each other.
-2 vectors are considered orthogonal to each other if $\left<A|B\right> = 0$.
+2 vectors are considered orthogonal to each other if \\(\left<A|B\right> = 0\\).
 Why? Lets try to prove it by building off the previous section.
 
 If 2 vectors, a and b, are orthogonal, their resultant vector's magnitude, c, should satisfy the following equation:
@@ -63,9 +63,9 @@ $$|a|^2 + |b|^2 = |c|^2$$
 
 ![Orthogonal vectors](/images/building-blocks-of-quantum-computing/orthogonal_vectors.png)
 
-Hence, if 2 vectors are orthogonal to each other, $|\left|A\right>|^2 + |\left|B\right>|^2$ should be equal to $|\left|A\right> + \left|B\right>|^2$
+Hence, if 2 vectors are orthogonal to each other, \\(|\left|A\right>|^2 + |\left|B\right>|^2\\) should be equal to \\(|\left|A\right> + \left|B\right>|^2\\)
 
-By rewriting $|\left|A\right> + \left|B\right>|^2$, we get:
+By rewriting \\(|\left|A\right> + \left|B\right>|^2\\), we get:
 
 $$\begin{aligned}
     |\left|A\right> + \left|B\right>|^2 &= \left<A+B|A+B\right> \\\\
@@ -81,4 +81,4 @@ $$\begin{aligned}
     &= |\left|A\right>|^2 + |\left|B\right>|^2 + 2\left<A|B\right>
 \end{aligned}$$
 
-The equation above shows that if $2\left<A|B\right> = \left<A|B\right> = 0$, $\left|A\right>$ and $\left|B\right>$ are orthogonal.
+The equation above shows that if \\(2\left<A|B\right> = \left<A|B\right> = 0\\), \\(\left|A\right>$ and $\left|B\right>\\) are orthogonal.
