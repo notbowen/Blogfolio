@@ -2,30 +2,37 @@
 none = "none"
 
 [[main]]
+name = "About"
+pre = "lightbulb"
+pageRef = "about"
+identifier = "9JmdBgvTvu"
+weight = 1
+
+[[main]]
 name = "Resume"
 pre = "graduation-cap"
-pageRef = "resume"
+url = "/resume.pdf"
 identifier = "FHAZLYSqTm"
-weight = 1
+weight = 2
 
 [[main]]
 name = "Posts"
 pre = "list"
 pageRef = "posts"
 identifier = "czWT460zDg"
-weight = 2
+weight = 3
 
 [[main]]
 pre = "github"
 url = "https://github.com/notbowen"
 identifier = "kxZ7LK5Rht"
-weight = 3
+weight = 4
 
 [[main]]
 pre = "linkedin"
 url = "https://linkedin.com/in/hubowen"
 identifier = "OdAuZT6e8s"
-weight = 4
+weight = 5
 
 [[footer]]
 none = "none"
