@@ -3,8 +3,6 @@ title: "The Building Blocks of Quantum Computing"
 date: 2023-12-04
 ---
 
-{{< katex >}}
-
 [NOTE] This is currently a work in progress article!
 
 Recently, I picked up a book by Chris Bernhardt, titled [Quantum Computing for Everyone](https://mitpress.mit.edu/9780262539531/quantum-computing-for-everyone/).

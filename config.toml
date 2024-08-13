@@ -1,0 +1,42 @@
+base_url = "https://hubowen.dev"
+compile_sass = true
+build_search_index = true
+theme = "archie-zola"
+taxonomies = [{ name = "tags" }]
+
+title = "Hu Bowen"
+description = "Cybersecurity & Digital Forensics @ Ngee Ann Polytechnic"
+
+[markdown]
+highlight_code = true
+
+[extra]
+mode = "light"
+useCDN = false
+katex_enable = true
+copyright = "Bowen"
+
+[[extra.translations.en]]
+show_more = "Read more ⟶"
+previous_page = "← Previous"
+next_page = "Next →"
+posted_on = "Last updated: "
+posted_by = "Published by"
+read_time = "minute read"
+all_tags = "All tags"
+menus = [
+    { name = "Projects", url = "/projects", weight = 1 },
+    { name = "Blog", url = "/posts", weight = 2 },
+    { name = "About", url = "/about", weight = 3 },
+    { name = "Resume", url = "/resume.pdf", weight = 4 },
+]
+
+[[extra.social]]
+icon = "github"
+name = "GitHub"
+url = "https://github.com/notbowen"
+
+[[extra.social]]
+icon = "linkedin"
+name = "LinkedIn"
+url = "https://linkedin.com/in/hubowen"
