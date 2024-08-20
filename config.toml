@@ -11,7 +11,7 @@ description = "Cybersecurity & Digital Forensics @ Ngee Ann Polytechnic"
 highlight_code = true
 
 [extra]
-mode = "light"
+mode = "toggle"
 useCDN = false
 katex_enable = true
 copyright = "Bowen"
